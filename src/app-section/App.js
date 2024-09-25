@@ -1,8 +1,7 @@
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
-  
     <div class="container">
       <h1 class="title-pricing">Star Scalling Your Bussines Now</h1>
       <p class="text-below">Select from best plan,ensuring a perfect match</p>
@@ -283,8 +282,6 @@ function App() {
         <div class="bg-right"></div>
       </div>
     </div>
-    
-
   );
 }
 

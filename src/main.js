@@ -1,10 +1,10 @@
-function main() {  
+function main() {
   let elementButton = document.querySelector(" .button-navigation");
   let elementMonthly = document.querySelector(" .monthly");
   let elementAnnually = document.querySelector(" .annually ");
   let elementDate = document.querySelectorAll(".date");
   let elPrice = document.querySelectorAll(".price");
-  
+
   elementAnnually.addEventListener("click", function () {
     elementButton.style.transform = `translateX(81px)`;
     elementAnnually.style.color = `#fff`;
@@ -19,7 +19,7 @@ function main() {
       item.innerHTML = "/Year";
     });
   });
-  
+
   elementMonthly.addEventListener("click", function () {
     elementButton.style.transform = `translateX(-81px)`;
     elementAnnually.style.color = `#000`;
@@ -36,5 +36,4 @@ function main() {
   });
 }
 
-
-export default main
+export default main;
