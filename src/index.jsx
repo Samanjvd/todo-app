@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app-section/App";
-import main from "./main";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -9,5 +8,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-const script = ReactDOM.createRoot(document.querySelector(".script"));
-script.render(<main />);

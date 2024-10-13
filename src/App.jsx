@@ -3,7 +3,8 @@ import "./App.css";
 function App() {
 
   const elementAnnually = () => {
-    console.log('clicked');    
+  
+   
   }
 
   const elementMonthly = () => {
