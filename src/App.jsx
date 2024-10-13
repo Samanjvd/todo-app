@@ -1,14 +1,23 @@
 import "./App.css";
 
 function App() {
+
+  const elementAnnually = () => {
+    console.log('clicked');    
+  }
+
+  const elementMonthly = () => {
+    console.log('clicked');    
+  }
+
   return (
     <div class="container">
       <h1 class="title-pricing">Star Scalling Your Bussines Now</h1>
       <p class="text-below">Select from best plan,ensuring a perfect match</p>
       <div class="navigation">
-        <span class="button-navigation"></span>
-        <span class="text-navigation monthly">monthly</span>
-        <span class="text-navigation annually">Annually</span>
+        <span class="button-navigation" ></span>
+        <span class="text-navigation monthly" onClick={elementMonthly}>monthly</span>
+        <span class="text-navigation annually" onClick={elementAnnually}>Annually</span>
       </div>
       <div class="cards-plan">
         <div class="card-basic">
