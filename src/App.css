@@ -149,7 +149,6 @@ h3 {
 
 .text-navigation {
   z-index: 100;
-  color: #fff;
   cursor: pointer;
 }
 .price {
@@ -185,8 +184,18 @@ h3 {
   -o-transition: all 0.2s ease-in-out;
 }
 
+.right-side {
+  transform: translateX(105%);
+}
+
+.plan-color {
+  color: #fff;
+}
+
 .button-navigation {
   position: absolute;
+  left: 5px;
+  top: 5%;
   width: 9.5rem;
   height: 90%;
   background-color: #304ffe;
@@ -195,11 +204,6 @@ h3 {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  transform: translateX(-81px);
-  -webkit-transform: translateX(-81px);
-  -moz-transform: translateX(-81px);
-  -ms-transform: translateX(-81px);
-  -o-transform: translateX(-81px);
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;

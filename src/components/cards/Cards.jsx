@@ -1,272 +1,109 @@
-import React from 'react'
+import React from "react";
+import { BsCheck2 } from "react-icons/bs";
 
-export default function cards() {
+export default function cards(plans) {
+  console.log(plans);
   return (
-    <div class="cards-plan">
-        <div class="card-basic">
-          <h3 class="title-card">Basic</h3>
-          <div class="price-table">
-            <span class="price">$120</span>
-            <sub class="date">/Month</sub>
-          </div>
-          <hr />
-          <ul class="card-optionitem">
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>elit. Unde, quae</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2400/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>elit. Asperiores, laborum</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Perspiciatis, deleniti</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>adipisicing elit. Eius, tempora</span>
-            </li>
-          </ul>
-          <button class="button-pricing">Get Started</button>
+    <div className="cards-plan">
+      <div className="card-basic">
+        <h3 className="title-card">Basic</h3>
+        <div className="price-table">
+          <span className="price">{plans.plans.price1}</span>
+          <sub className="date">{plans.plans.date}</sub>
         </div>
-        <div class="card-proffesional">
-          <h3 class="title-card">proffesional</h3>
-          <div class="price-table">
-            <span class="price">$220</span>
-            <sub class="date">/Month</sub>
-          </div>
-          <hr />
-          <ul class="card-optionitem">
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Unde, quae</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Asperiores, laborum</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Perspiciatis, deleniti</span>
-            </li>
-          </ul>
-          <button class="button-pricing">Get Started</button>
-        </div>
-        <div class="card-custom">
-          <h3 class="title-card">Custom</h3>
-          <div class="price-table">
-            <span class="price">$350</span>
-            <sub class="date">/Month</sub>
-          </div>
-          <hr />
-          <ul class="card-optionitem">
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Lorem ipsum</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Lorem ipsum dolor</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Perspiciatis, deleniti</span>
-            </li>
-            <li class="option-item">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 12.75 6 6 9-13.5"
-                  />
-                </svg>
-              </span>
-              <span>Eius, tempora</span>
-            </li>
-          </ul>
-          <button class="button-pricing button-custom">Get Started</button>
-        </div>
+        <hr />
+        <ul className="card-optionitem">
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>elit. Unde, quae</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>elit. Asperiores, laborum</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Perspiciatis, deleniti</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>adipisicing elit. Eius, tempora</span>
+          </li>
+        </ul>
+        <button className="button-pricing">Get Started</button>
       </div>
-  )
+      <div className="card-proffesional">
+        <h3 className="title-card">proffesional</h3>
+        <div className="price-table">
+          <span className="price">{plans.plans.price2}</span>
+          <sub className="date">{plans.plans.date}</sub>
+        </div>
+        <hr />
+        <ul className="card-optionitem">
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Unde, quae</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Asperiores, laborum</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Perspiciatis, deleniti</span>
+          </li>
+        </ul>
+        <button className="button-pricing">Get Started</button>
+      </div>
+      <div className="card-custom">
+        <h3 className="title-card">Custom</h3>
+        <div className="price-table">
+          <span className="price">{plans.plans.price3}</span>
+          <sub className="date">{plans.plans.date}</sub>
+        </div>
+        <hr />
+        <ul className="card-optionitem">
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Lorem ipsum</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Lorem ipsum dolor</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Perspiciatis, deleniti</span>
+          </li>
+          <li className="option-item">
+            <span>
+              <BsCheck2 style={{ display: "flex" }} />
+            </span>
+            <span>Eius, tempora</span>
+          </li>
+        </ul>
+        <button className="button-pricing button-custom">Get Started</button>
+      </div>
+    </div>
+  );
 }
